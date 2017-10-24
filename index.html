@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>長榮航空 | 那些年，我們一起搭的747-400</title>
+        <!-- facebook share-->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="長榮航空｜那些年，我們一起搭的747-400" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="也許你曾在 747-400 上，看著窗外的異國風景，或是曾抬頭仰望，意外發現她的蹤跡，因為你的參與，才能讓 747-400 創造出這麼多美好回憶。" />
+        <meta property="og:image" content="img/600x315.png" />
+        <meta property="fb:app_id" content="355985614832912" />
+
+        <!-- favicon-->
+        <link rel="icon" href="img/favicon.ico">
+
+        <!-- css style-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/self.css?v=20170823">
+        <link rel="stylesheet" href="css/vendor/slick.min.css">
+        <link rel="stylesheet" href="css/vendor/animate.min.css">
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <script src="js/vendor/vue.min.js"></script>
+        <script src="js/vendor/vue-router.min.js"></script>
+        <script src="js/vendor/TweenMax.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
+        <script src="js/vendor/jquery-parallax-min.js"></script>
+        <script src="js/vendor/wow.min.js"></script>
+        <script src="js/vendor/isMobile.min.js"></script>
+        <script src="js/vendor/ga.js"></script>
+        <!--[if gt IE 9]><script src="js/vendor/html5shiv.js"></script><![endif]-->
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-N9468F8');
+        </script>
+        <!-- End Google Tag Manager -->
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9468F8" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <span id="indexPage" v-cloak v-if="!ieFG" :class="langTP">
+            <h1 class="myWord">那些年我們一起搭的747 - 400</h1>
+            <h2 class="myWord">也許你曾在 747-400 上，看著窗外的異國風景，或是曾抬頭仰望，意外發現她的蹤跡，因為你的參與，才能讓 747-400 創造出這麼多美好回憶。</h2>
+            <div id="splash">
+                <div class="anim">
+                    <div id="loader"><img src="asset/svg/plane.svg" alt=""><img class="shade" src="asset/svg/plane_b.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="trans_bg">
+                <div class="trans_iphone">
+                    <div class="trans_center"><img src="img/iphone_ok.png">                
+                        <p>請將裝置轉至直式<br>體驗最佳瀏覽方式</p>
+                    </div>
+                </div>
+            </div>
+            <!-- header-->
+            <header :class="{ 'mobile' : burger }"><a class="logo" href="#"><img src="asset/svg/logo_w.svg" alt="logo"></a>
+                <!-- bur-->
+                <div class="burBox" id="toggle" @click="burgerCtrl">
+                    <div class="burger" :class="{ 'cross' : burger == true }" ><span></span></div>
+                </div>
+                <!-- PC menu -->
+                <nav class="menu">
+                    <ul>
+                        <span class="left">
+                            <li><a class="line" href="#" role="album" @click="gaclick('menu_image')">{{ langData.menu_01 }}</a></li>
+                            <li><a class="line" href="#" role="history" @click="gaclick('menu_timeline')">{{ langData.menu_02 }}</a></li>
+                            <li><a class="line" href="#" role="story" @click="gaclick('menu_history')">{{ langData.menu_03 }}</a></li>
+                            <li><a class="line" href="#" role="QA" @click="gaclick('menu_QA')">{{ langData.menu_04 }}</a></li>
+                            <li><a class="line" href="#" role="fbBox" @click="gaclick('menu_fanpage')">{{ langData.menu_05 }}</a></li>
+                            <li><a class="fb" href="#" role="fb"><span class="icon-fb"></span></a></li>
+                        </span>
+                        <li class="lang">
+                            <ul>
+                                <li><a :class="{ 'active' : langTP == 'zh' }" href="#" @click="changeLang($event, 'zh')">繁中 </a></li>
+                                <li>/</li>
+                                <li><a :class="(langTP == 'en') ? 'active' : 'line'" href="#" @click="changeLang($event, 'en')">English </a></li>
+                                <li>/</li>
+                                <li><a :class="(langTP == 'jp') ? 'active' : 'line'" href="#" @click="changeLang($event, 'jp')">日本語</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- M Menu-->
+            <div class="menubox overlay" id="overlay" :class="{ 'open' : burger == true }">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li><a class="line" href="#" role="album" @click="gaclick('menu_image')">{{ langData.menu_01 }}</a></li>
+                        <li><a class="line" href="#" role="history" @click="gaclick('menu_timeline')">{{ langData.menu_02 }}</a></li>
+                        <li><a class="line" href="#" role="story" @click="gaclick('menu_history')">{{ langData.menu_03 }}</a></li>
+                        <li><a class="line" href="#" role="QA" @click="gaclick('menu_QA')">{{ langData.menu_04 }}</a></li>
+                        <li><a class="line" href="#" role="fbBox" @click="gaclick('menu_fanpage')">{{ langData.menu_05 }}</a></li>
+                        <li class="lang">
+                            <ul>
+                                <li class="lang"><a :class="{ 'active' : langTP == 'zh' }" href="#" @click="changeLang($event, 'zh')">繁中 </a></li>
+                                <li class="lang">/</li>
+                                <li class="lang"><a :class="(langTP == 'en') ? 'active' : 'line'" href="#" @click="changeLang($event, 'en')">English </a></li>
+                                <li class="lang">/</li>
+                                <li class="lang"><a :class="(langTP == 'jp') ? 'active' : 'line'" href="#" @click="changeLang($event, 'jp')">日本語</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="fb_pos" href="#" role="fb"><span class="icon-fb"></span></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- lightbox-->
+            <transition name="fade">
+                <div class="lightbox" v-show="lightbox"><a class="close" @click="{ lightbox = false, aClose = false }"><span></span><span></span></a>
+                    <!-- album-->
+                    <div class="main album_main">
+                        <p>{{ lightWord }}</p>
+                        <div class="gallery"> 
+                            <div class="lightbox_arrow">
+                                <a class="left"><span class="icon-arrow"></span></a>
+                                <a class="right"><span class="icon-arrow"></span></a>
+                            </div>
+                            <div class="slickBox">
+                                <div :index="$index" class="picBox" v-for="(item, $index) in slickData">
+                                    <img :src="'img/album/' + item.src" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider">
+                            <ul>
+                                <li v-for="(item, $index) in slickData">
+                                    <a :class="{ 'active' : $index == 0 }">
+                                        <img :src="'img/album/' + item.src" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a class="closeArea" @click="{ lightbox = false, aClose = false }" v-if="aClose"></a>
+                </div>
+            </transition>
+            <!-- timeline-->
+            <transition name="fade">
+                <div class="lightbox" v-show="singleBox">
+                    <a class="close" @click="singleBox = false"><span></span><span></span></a>
+                    <div class="main"><img :src="singleBoxSrc" alt=""></div>
+                    <a class="closeArea" @click="singleBox = false"></a>
+                </div>
+            </transition>
+            <!-- content-->
+            <div class="wrap">
+                <div class="index">
+                    <div class="main">
+                        <h1>
+                            <div class="ani_pos">
+                                <div class="tt1" v-show="langTP != 'jp'"><img :src="langData.index_tt1" alt=""></div>
+                                <div class="tt2" v-show="langTP == 'zh'"><img src="asset/svg/tt2.svg" alt=""></div>
+                                <div class="tt3"><img :src="langData.index_tt3" alt=""></div>
+                                <div class="tt4"><img src="img/tt4.png" alt=""></div>
+                                <div class="tt5"><img src="asset/svg/tt5.svg" alt=""></div>
+                            </div><img class="base" :src="langData.index_base" alt="那些年，我們一起搭的747-400">
+                        </h1>
+                        <p class="sub" v-html="langData.index_H2_PC"></p>
+                        <p class="sub m_sub" v-html="langData.index_H2_M"></p>
+                        <div class="scroll">
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="top-slider">
+                        <div class="cell">
+                            <div class="inner">
+                                <div class="slide-img" style="background: url(img/bg1.png) center bottom; background-size: cover;"></div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="inner">
+                                <div class="slide-img" style="background: url(img/bg2.png) center bottom; background-size: cover;"></div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="inner">
+                                <div class="slide-img" style="background: url(img/bg3.png) center bottom; background-size: cover;"></div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="inner">
+                                <div class="slide-img" style="background: url(img/bg4.png) center bottom; background-size: cover;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="cloud"></div>
+                    <div class="content">
+                        <div class="subject">
+                            <div class="left">
+                                <div class="line"></div>
+                            </div>
+                            <div class="right">
+                                <h2>{{ langData.photo_H1 }}</h2>
+                                <div class="sub">{{ langData.photo_H2 }}</div>
+                                <div class="tab">
+                                    <ul>
+                                        <li :class="{ 'active' : albumFG == true }" @click="{ albumFG = true, gaclick('image_photo') }"><a :style="{ 'cursor': 'pointer'}"><span class="icon-camera"></span><span>{{ langData.photo }}</span></a></li>
+                                        <li class="line"></li>
+                                        <li :class="{ 'active' : albumFG == false }" @click="{ albumFG = false, gaclick('image_video') }"><a :style="{ 'cursor': 'pointer'}"><span class="icon-video"></span><span>{{ langData.video }}</span></a></li>
+                                        <div class="bar" :class="{ 'move' : albumFG == false }"></div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main">
+                            <div class="albumbox" v-show="albumFG">
+                                <ul>
+                                    <li><a href="#" @click="openBox($event, 0)"><span v-html="langData.photo_01"></span><img src="img/album/01_01_s.jpg" alt="19921102_西雅圖波音公司747-400交機儀式暨晚宴"></a></li>
+                                    <li><a href="#" @click="openBox($event, 1)"><span v-html="langData.photo_02"></span><img src="img/album/02_01_s.jpg" alt="19921102_長榮航空第一架及第二架747-400交機儀式"></a></li>
+                                    <li><a href="#" @click="openBox($event, 2)"><span v-html="langData.photo_03"></span><img src="img/album/03_01_s.jpg" alt="19921124_長榮航空第一、二架747-400抵臺歡迎儀式"></a></li>
+                                    <li><a href="#" @click="openBox($event, 3)"><span v-html="langData.photo_04"></span><img src="img/album/04_01_s.jpg" alt="19921124_長榮航空第一、二架747-400新機抵台歡迎儀式"></a></li>
+                                    <li><a href="#" @click="openBox($event, 4)"><span v-html="langData.photo_05"></span><img src="img/album/05_01_s.jpg" alt="19930518_長榮航空第三架747-400新機抵台接機儀式"></a></li>
+                                    <li><a href="#" @click="openBox($event, 5)"><span v-html="langData.photo_06"></span><img src="img/album/06_01_s.jpg" alt="19930923_慶祝長榮航空第五架747-400新機抵台接機儀式"></a></li>
+                                    <li><a href="#" @click="openBox($event, 6)"><span v-html="langData.photo_07"></span><img src="img/album/07_01_s.jpg" alt="20080314_長榮航空747-400機艙改艙"></a></li>
+                                    <li><a href="#" @click="openBox($event, 7)"><span v-html="langData.photo_08"></span><img src="img/album/08_01_s.jpg" alt="長榮航空747-400 第一代機身塗裝"></a></li>
+                                    <li><a href="#" @click="openBox($event, 8)"><span v-html="langData.photo_09"></span><img src="img/album/09_01_s.jpg" alt="長榮航空747-400 第二代機身塗裝"></a></li>
+                                    <li><a href="#" @click="openBox($event, 9)"><span v-html="langData.photo_10"></span><img src="img/album/10_01_s.jpg" alt="長榮航空747-400機上服務"></a></li>
+                                    <li><a href="#" @click="openBox($event, 10)"><span v-html="langData.photo_11"></span><img src="img/album/11_01_s.jpg" alt="長榮航空747-400機上餐點"></a></li>
+                                    <li><a href="#" @click="openBox($event, 11)"><span v-html="langData.photo_12"></span><img src="img/album/12_01_s.jpg" alt="長榮航空747-400機內環境"></a></li>
+                                    <li><a href="#" @click="openBox($event, 12)"><span v-html="langData.photo_13"></span><img src="img/album/13_01_s.jpg" alt="長榮航空747-400機內環境"></a></li>
+                                    <li><a href="#" @click="openBox($event, 13)"><span v-html="langData.photo_14"></span><img src="img/album/14_01_s.jpg" alt="長榮航空747-400機內環境"></a></li>
+                                </ul>
+                            </div>
+                            <div class="video" v-show="!albumFG">
+                                <div style="position:relative;height:0;padding-bottom:56.25%">
+                                    <iframe v-if="!albumFG" src="https://www.youtube.com/embed/FTPIBtY4aSg?list=PL_PR6YoCajFla_d_xKvTHe_2KeOdBaTeF&rel=0&amp;controls=1&amp;showinfo=0?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c1"><img src="img/c1.png" alt=""></div>
+                </div>
+                <div class="history">
+                    <div class="main">
+                        <h2>{{ langData.Timeline_H1 }}</h2>
+                        <div class="sub">{{ langData.Timeline_H2 }}</div>
+                        <div class="timeline">
+                            <section>
+                                <div class="event" v-html="langData.Timeline_01"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img class="p1" src="img/event/event_01.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_02"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_02.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_03"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_03.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_04"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="c2-2"><img src="img/c2.png" alt=""></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_05"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_04.jpg" alt=""></a></div>
+                                <div class="plane1 wow slideInRight"><img src="img/plane2.png" alt=""></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_06"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_05.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_07"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_06.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_08"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_07.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_09"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_08.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_10"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img class="p9" src="img/event/event_09.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_11"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img class="p10" src="img/event/event_10.jpg" alt=""></a></div>
+                                <div class="c3"><img src="img/c3.png" alt=""></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_13"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="c2-3"><img src="img/c2.png" alt=""></div>
+                                <div class="plane2 wow slideInLeft"><img src="img/plane1.png" alt=""></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_14"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_13.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_15"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_14.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_16"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_15.jpg" alt=""></a></div>
+                                <div class="c1-2"><img src="img/c1.png" alt=""></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_17"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_16.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_18"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img class="p17" src="img/event/event_17.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_19"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_18.jpg" alt=""></a></div>
+                            </section>
+                            <section>
+                                <div class="event" v-html="langData.Timeline_20"></div>
+                                <div class="tldots"><div class="cir"></div></div>
+                                <div class="pic"><a href="#" @click="openSingle($event)"><img src="img/event/event_19.jpg" alt=""></a></div>
+                            </section>
+                        </div>
+                        <div class="story">
+                            <div class="content">
+                                <h3>{{ langData.History_H1 }}</h3>
+                                <div class="story_arrowbox">
+                                    <a class="left" href="#"><span class="icon-arrow"></span></a>
+                                    <a class="right" href="#"><span class="icon-arrow"></span></a>
+                                </div>
+                                <div class="slidebox">
+                                    <div class="item">
+                                        <h4>{{ langData.History_01_1 }}</h4>
+                                        <p>{{ langData.History_01_2 }}</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4>{{ langData.History_02_1 }}</h4>
+                                        <p>{{ langData.History_02_2 }}</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4>{{ langData.History_03_1 }}</h4>
+                                        <p>{{ langData.History_03_2 }}</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4>{{ langData.History_04_1 }}</h4>
+                                        <p>{{ langData.History_04_2 }}</p>
+                                    </div>
+                                    <div class="item">
+                                        <h4>{{ langData.History_05_1 }}</h4>
+                                        <h5>{{ langData.History_05_2_1 }}</h5>
+                                        <div class="years">
+                                            <ul v-html="langData.History_05_2_2"></ul>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <h4>{{ langData.History_05_1 }}</h4>
+                                        <h5>{{ langData.History_05_2_3 }}</h5>
+                                        <div class="years">
+                                            <ul v-html="langData.History_05_2_4"></ul>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <h4>{{ langData.History_05_1 }}</h4>
+                                        <div class="txtbox">
+                                            <h5>{{ langData.History_05_2_5 }}</h5>
+                                            <div class="years"><ul v-html="langData.History_05_2_6_1"></ul></div>
+                                            <div class="years"><ul v-html="langData.History_05_2_6_2"></ul></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider">
+                                    <div class="indicator"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c2"><img src="img/c2.png" alt=""></div>
+                        <div class="c3-2"><img src="img/c3.png" alt=""></div>
+                        <div class="c3-3"><img src="img/c3.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="QA">
+                    <div class="main">
+                        <h2>{{ langData.QA_H1 }}</h2>
+                        <div class="sub">{{ langData.QA_H2 }}</div>
+                        <div class="content">
+                            <ul>
+                                <li><a class="qabox">
+                                    <div class="question">{{ langData.QA_01_Q }}
+                                        <div class="plus_btn">
+                                            <div class="btn_box"> 
+                                                <div class="plus-minus-toggle collapsed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="answer">{{ langData.QA_01_A }}</div></a></li>
+                                <li><a class="qabox">
+                                    <div class="question">{{ langData.QA_02_Q }}
+                                        <div class="plus_btn">
+                                            <div class="btn_box"> 
+                                                <div class="plus-minus-toggle collapsed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="answer col-2" v-html="langData.QA_02_A_1"></div>
+                                    <div class="answer col-2" v-html="langData.QA_02_A_2"></div></a></li>
+                                <li><a class="qabox">
+                                    <div class="question">{{ langData.QA_03_Q }}
+                                        <div class="plus_btn">
+                                            <div class="btn_box"> 
+                                                <div class="plus-minus-toggle collapsed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="answer" v-html="langData.QA_03_A"></div></a></li>
+                                <li><a class="qabox">
+                                    <div class="question">{{ langData.QA_04_Q }}
+                                        <div class="plus_btn">
+                                            <div class="btn_box"> 
+                                                <div class="plus-minus-toggle collapsed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="answer">{{ langData.QA_04_A }}</div></a></li>
+                                <li><a class="qabox">
+                                    <div class="question">{{ langData.QA_05_Q }}
+                                        <div class="plus_btn">
+                                            <div class="btn_box"> 
+                                                <div class="plus-minus-toggle collapsed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="answer" v-html="langData.QA_05_A"></div></a></li>
+                                <li><a class="qabox">
+                                    <div class="question">{{ langData.QA_06_Q }}
+                                        <div class="plus_btn">
+                                            <div class="btn_box"> 
+                                                <div class="plus-minus-toggle collapsed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="answer" v-html="langData.QA_06_A"><br></div></a></li>
+                                <li><a class="qabox">
+                                    <div class="question">{{ langData.QA_07_Q }}
+                                        <div class="plus_btn">
+                                            <div class="btn_box"> 
+                                                <div class="plus-minus-toggle collapsed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="answer">{{ langData.QA_07_A }}</div></a></li>
+                                <li><a class="qabox">
+                                    <div class="question">{{ langData.QA_08_Q }}
+                                        <div class="plus_btn">
+                                            <div class="btn_box"> 
+                                                <div class="plus-minus-toggle collapsed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="answer">{{ langData.QA_08_A }}</div></a></li>
+                                <li><a class="qabox">
+                                    <div class="question">{{ langData.QA_09_Q }}
+                                        <div class="plus_btn">
+                                            <div class="btn_box"> 
+                                                <div class="plus-minus-toggle collapsed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="answer">{{ langData.QA_09_A }}</div></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fbBox">
+                    <h2>{{ langData.FB_H1 }}</h2>
+                    <div class="sub">{{ langData.FB_H2 }}</div>
+                    <div class="main">
+                        <div class="left">
+                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fevaairwayscorp.tw%2Fposts%2F864319930381858&show_text=true&appId=263541880685647&height=600" width="100%" height="600" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        </div>
+                        <div class="right">
+                            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fevaairwayscorp.tw%2Fvideos%2F862389463908238%2F&show_text=true&appId=263541880685647" width="100%" style="border:none;" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                        </div>
+                    </div>
+                    <footer><img src="img/footer.png" alt="">
+                        <p>Copyright © EVA Airways. All rights reserved.</p>
+                    </footer>
+                </div>
+                <div class="scrolling_cloud"></div>
+            </div>
+        </span>
+        <script src="js/index.js?v=20170831"></script>
+    </body>
+</html>
