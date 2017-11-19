@@ -147,7 +147,8 @@ input {
 
 .body {
   width: 100%;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .trans_bg {
   position: fixed;
@@ -308,7 +309,8 @@ header {
   top: 0;
   left: 0;
   background: white;
-  line-height: 80px; }
+  line-height: 80px;
+  border-top: 1px solid #e0e0e0; }
   @media screen and (max-width: 767px) {
     header {
       height: 70px;
