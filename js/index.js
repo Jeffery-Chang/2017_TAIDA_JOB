@@ -61,7 +61,7 @@
         },
         scrollSet: function(){
             var disTop = $(window).scrollTop();
-            var learnTop = $('.learning').position().top;
+            var learnTop = $('.learning').position().top - $('.learning').height();
             
             if(disTop > learnTop){
                 $('.apply_btn').addClass('show');
