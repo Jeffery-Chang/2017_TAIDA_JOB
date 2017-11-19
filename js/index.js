@@ -3,6 +3,7 @@
         loadHash: true,
         init: function(){
             var $this = this;
+            $('.worker .main, .worker .job h2, .worker .job .container, .worker .job .btn, .worker .job .mt, .worker .job .solar_box').addClass('wow fadeInUp').attr('data-wow-offset', '50');
             // 初始化WOW
             $('.wow').css('visibility', 'hidden');
 
