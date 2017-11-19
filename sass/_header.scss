@@ -1,0 +1,81 @@
+// basic header styles
+header {
+    width: 100%;
+    box-shadow: 0px 1px 16.38px 4.62px rgba(0, 0, 0, 0.24);
+    height: 80px;
+    position:absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background: white;
+    line-height: 80px;
+     @media screen and (max-width: 767px) {
+        height: 70px;
+        line-height: 70px;
+    }
+    &:after {
+        @media screen and (min-width: 768px) {
+            content: "";
+            background: white;
+            width: 290px;
+            height: 10px;
+            display: block;
+            position: absolute;
+            left: -15px;
+            bottom: -10px;
+            box-shadow: 4px 8px 12px rgba(0, 0, 0, .2);
+            transform: skew(-15deg);
+        }
+    }
+    .pc_nav {
+        float: right;
+        @include clear;
+        margin-right: 20px;
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+        li {
+            font-size: 1.6rem;
+            color: $blue;
+            display: inline-block;
+            margin: 0 20px;
+            &:nth-child(2) {
+                img {
+                    width: 16px;
+                    margin-top: 3px;
+                }
+            }
+        }
+        img {
+            width: 20px;
+            margin-right: 8px;
+        }
+        a {
+            color: $blue;
+            font-weight: bold;
+
+            >* {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+    a {
+        transition: all .3s ease;
+    }
+}
+
+.logo {
+    width: 200px;
+    display: inline-block;
+    margin: 20px;
+    &:hover {
+        opacity: 0.7;
+    }
+    @media screen and (max-width: 767px) {
+        width: 140px;
+    }
+}

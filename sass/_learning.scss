@@ -1,0 +1,52 @@
+.learning {
+    background: #e5f9ff;
+    z-index: 1;
+    padding-bottom: 80px;
+    h3 {
+        .icon {
+            height: 23px;
+        }
+    }
+}
+
+.chart {
+    width: 70%;
+    max-width: 1024px;
+    margin: 20px auto;
+    @media screen and (max-width: 767px) {
+        width: 90%;
+    }
+}
+
+.culture {
+    width: 80%;
+    max-width: 1100px;
+    margin: 60px auto 0;
+    @media screen and (max-width: 767px) {
+        width: 90%;
+        margin: 30px auto 0;
+    }
+    li {
+        font-size: 1.6rem;
+        color: $blue;
+        display: inline-block;
+        width: 32%;
+        background: white;
+        border: solid 1px #8fc4d3;
+        padding: 2px;
+        &:nth-child(2) {
+            margin: 0 2%;
+        }
+    }
+    .sub {
+        background: #63c2ff;
+        color: white;
+        @extend %fw_b;
+        font-size: 2.4rem;
+        padding: 2px;
+        margin-top: 10px;
+        @media screen and (max-width: 767px) {
+            font-size: 2rem;
+        }
+    }
+}

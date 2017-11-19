@@ -1,0 +1,15 @@
+{
+    "jscompiler": {
+        "outputs": [
+            {
+                "inputs": [
+                    "js/index.js"
+                ],
+                "output": "bundle/index.js",
+                "generateMap": false,
+                "mangle": true,
+                "isolate": false
+            }
+        ]
+    }
+}

@@ -1,0 +1,41 @@
+doctype html
+html
+    head
+        include head
+    body
+        .body
+            block trans
+                include trans
+                // header
+            header
+                a.logo(href="#") 
+                    img(src="../asset/svg/logo.svg", alt="logo")
+                // bur
+                block bur
+                    include bur
+                // M Menu
+                include menubox
+                <script  src="js/vendor/menubox.js"></script>
+                // PC menu 
+                nav.pc_nav
+                    ul
+                        li
+                            a.line(href="#")
+                                img(src="asset/svg/star.svg", alt="")
+                                span 智能人才
+                        li
+                            a.line(href="#")
+                                img(src="asset/svg/book.svg", alt="") 
+                                span 學習發展
+                        li
+                            a.line(href="gift.html")
+                                img(src="asset/svg/good.svg", alt="") 
+                                span 優質福利
+                
+            // content
+            .wrap
+                block content
+            block other
+            
+
+

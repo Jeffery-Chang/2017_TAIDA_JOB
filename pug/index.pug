@@ -1,0 +1,543 @@
+extends ./include/layout
+block bur
+	include ./include/bur
+block content
+	// kv
+	section.index
+		.main
+			.tt
+				.fan
+					.fan_pos
+						img(src="img/fan.png", alt="")
+				.ttBox
+					img.pc_dis(src="img/tt.png", alt="")
+					img.m_dis(src="img/tt_m.png", alt="")
+			.leftOuter
+				.left
+					img(src="img/line-l.png", alt="")
+			.rightOuter
+				.right
+					img(src="img/line-r.png", alt="")
+		.bg
+			img.pc_dis(src="img/city.png", alt="")
+			img.m_dis(src="img/city_m.png", alt="")
+		.proOuter
+			.pro_line
+				img.pc_dis(src="img/pro-line.png", alt="")
+				img.m_dis(src="img/pro_line_m.png", alt="")
+	//intro
+	section.intro
+		.left
+			.main
+				h3 
+					span.icon 
+						img(src="asset/svg/icon-company.svg", alt="")
+					span 企業介紹
+				h2 領導廠商創新優勢
+				p 台達電子是全球電源管理及散熱解決方案領導廠商，
+					span.break 秉持「環保　節能　愛地球」的經營使命，
+					span.break 運用電力電子核心技術，深耕台灣市場。
+				p 為因應工業4.0來臨，
+					span.break 台達專注發展工業自動化產品和解決方案，
+					span.break 同時積極開發智能機台、整合管理平台，
+					span.break 建構智能製造系統與彈性多工智能產線。
+				p 台達積極發展品牌，營運據點遍佈全球，提供海外發展機會，
+					span.break 熱情募集擁有創新思維人才，共創智能未來。
+		.right
+	//worker
+	section.worker
+		.tt
+			h3 
+				span.icon 
+					img(src="asset/svg/icon-star.svg", alt="")
+				span 智能人才
+			h2 智能人才實踐想像
+			p.spec 
+				span.large 台達
+				| 能給你比想像的更多
+			p 台達擁有豐富的資源及能力，讓人才發揮自身所長！
+				span.break 智能人才能在這裡，得以實現理想，並讓自己走在世界的前端。
+		.deco
+			img(src="img/deco3.png", alt="")
+		//tab
+		.tab
+			ul
+				li
+					a.active(href="#") 機構設計
+				li
+					a(href="#") FAE
+				li
+					a(href="#") 機械設計
+				li
+					a(href="#") 軟體開發
+				li
+					a(href="#") 軟體設計
+		.p1(style="display:none")
+			.main
+				.ppl
+					.pic_pos
+						.inner
+							.pic
+								.inner
+									.num
+										img(src="asset/svg/01.svg", alt="")
+									.name
+										.inner
+											ul
+												li
+													img(src="asset/svg/icon-target.svg", alt="")
+												li 丁必陞
+												li 機構設計資深工程師
+												li 年資1年
+									img.pc_dis(src="img/PPL1.png", alt="")
+									img.m_dis(src="img/PPL1_m.png", alt="")
+							.bg
+								img(src="img/deco4.png", alt="")
+				//txt
+				.content
+					h4 選擇台達的原因
+					p 個人能在台達獲得專業上的成就。另外，台達的產品定位明確及全球化程度相當高，希望自己能為這樣的產品出一份力。
+					h4 在台達的成長
+					ul
+						li 藉由公司內外部的訓練，能讓我在產品設計上能夠更加全面。
+						li 在跨部門的協助當中，必須考量到對方的想法，從中找到更好的解決方案，使得自己在做事上更圓融。
+					h4 建議應徵此職務必備技能
+					p 除了基本的機械常識外，首先必須要有良好的溝通能力，因為除了設計之外必須跟客戶、廠商、部門之間進行溝通，才能讓你的產品(設備)更加完善。接著，還必須要有良好的規劃能力，不管是在時間管控及專案執行上，都必須要有完善的規劃能力。
+					h4 給新鮮人的一句話
+					h5 
+						span.txt 相信自己的選擇
+							span.d1
+								img(src="asset/svg/d1.svg", alt="")
+							span.d2 
+								img(src="asset/svg/d2.svg", alt="")
+				.dot_bg
+				.ppl_bg
+					img(src="img/PPL1-2.png", alt="")
+			.job
+				h2 自動化機械設計工程師(中壢)
+				.container
+					.left
+						.box
+							.tt 工作內容
+							ul
+								li 執行市場產品(自動化機械)趨勢研究
+								li 機構設計類零部件結構/功能設計的執行
+								li 機構設計類產品設計input/output審查的執行
+								li 機構設計類產品BOM手稿提供與確認的規劃與執行
+								li 規劃與執行機構設計類零件材料選用及供應商導入
+								li 擬定與執行機構設計類工程/設計變更
+					.right
+						.box
+							.tt 需求年資與背景
+							ul
+								li 碩士畢業，2年以上經驗
+								li 機械工程相關系所畢業
+						.box
+							.tt 具備技能
+							p 熟悉使用Auto-CAD、PRO/E
+				a.btn.js-monitor-params(href="#")
+					span 立即應徵
+					span.icon 
+						img(src="asset/svg/arrow.svg", alt="")
+				.mt
+					img(src="img/mt.png", alt="")
+				.solar_box
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+		.p2(style="display:none")
+			.main
+				.ppl
+					.pic_pos
+						.inner
+							.pic
+								.inner
+									.num
+										img(src="asset/svg/02.svg", alt="")
+									.name
+										.inner
+											ul
+												li
+													img(src="asset/svg/icon-target.svg", alt="")
+												li 何昌明
+												li FAE資深課長
+												li 年資7.8年
+									img.pc_dis(src="img/PPL2.png", alt="")
+									img.m_dis(src="img/PPL2_m.png", alt="")
+							.bg
+								img(src="img/deco4.png", alt="")
+				//txt
+				.content
+					h4 選擇台達的原因
+					p 當初因欣賞創辦人鄭先生的經營理念而進入台達。台達體系完整、穩定成長，且機電事業群擁有完整的工業自動化產品，從設備層、控制層、到最上位的資訊層，可提供客戶整套解決方案，引領業界邁向工業4.0智慧製造之路。
+					h4 在台達的成長
+					p 台達擁有完整的培訓制度，個人由一開始的FAE工程師，到如今擔任管理職，公司在不同職務位置會提供員工相對應的訓練課程，讓員工持續成長茁壯。
+					h4 建議應徵此職務必備技能
+					p 電機/機械相關科系畢業，熟悉工控產品，擁有自動化相關經驗。
+					h4 給新鮮人的一句話
+					h5 
+						span.txt 電機/機械相關科系畢業，熟悉工控產品，擁有自動化相關經驗。
+							span.d1
+								img(src="asset/svg/d1.svg", alt="")
+							span.d2 
+								img(src="asset/svg/d2.svg", alt="")
+				.dot_bg
+				.ppl_bg
+					img(src="img/PPL2-2.png", alt="")
+			.job
+				h2 FAE應用工程師(智能訊息)<br>智慧感測器事業處IABG(桃園三廠)
+				.container
+					.left
+						.box
+							.tt 工作內容
+							ul
+								li 工控產品應用整合技術服務
+								li 新產品、新行業市場推廣
+								li 產品操作說明文件製作
+								li 應用案例文件製作
+								li 擔任培訓講師，進行常規產品培訓
+								li 協助業務處理客戶問題
+								li 提供客戶正確的產品規格與應用整合服務
+								li 協助客戶端現場試機與售前售後技術服務
+					.right
+						.box
+							.tt 需求年資與背景
+							ul
+								li 碩士畢業，2年以上經驗
+								li 電機電子、機械工程、自動控制、其他工程相關系所畢業
+
+						.box
+							.tt 具備技能
+							ul
+								li PLC產品開發經驗尤佳 
+								li 英文能力中等以上
+								li 具備機器視覺基礎知識
+
+				a.btn.js-monitor-params(href="#")
+					span 立即應徵
+					span.icon 
+						img(src="asset/svg/arrow.svg", alt="")
+				.mt
+					img(src="img/mt.png", alt="")
+				.solar_box
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+		.p3(style="display:none")
+			.main
+				.ppl
+					.pic_pos
+						.inner
+							.pic
+								.inner
+									.num
+										img(src="asset/svg/03.svg", alt="")
+									.name
+										.inner
+											ul
+												li
+													img(src="asset/svg/icon-target.svg", alt="")
+												li 李佩君
+												li 機械設計資深課長
+												li 年資5年
+									img.pc_dis(src="img/PPL3.png", alt="")
+									img.m_dis(src="img/PPL3_m.png", alt="")
+							.bg
+								img(src="img/deco4.png", alt="")
+				//txt
+				.content
+					h4 選擇台達的原因
+					p 由於自動化的發展是逐步被重視的，機器人產業勢必成為主流產品，得知台達要成立機器人部門時，就立即選擇加入台達。
+					h4 在台達的成長
+					ul
+						li 每月都有多場專業能力提升課程，也有線上語言進修課程。
+						li 參加國內外展覽活動，充實個人視野及增加產品設計靈感。
+						li 針對管理職會有專業講師，加強工作效率提升、專案管理。
+					h4 建議應徵此職務必備技能
+					p 專業能力是基本的條件，另外就是個人的熱忱及態度。
+					h4 給新鮮人的一句話
+					h5 
+						span.txt 勇於嘗試，挑戰自我
+							span.d1
+								img(src="asset/svg/d1.svg", alt="")
+							span.d2 
+								img(src="asset/svg/d2.svg", alt="")
+				.dot_bg
+				.ppl_bg
+					img(src="img/PPL3-2.png", alt="")
+			.job
+				h2 機構設計工程師_台中分公司(中科)
+				.container
+					.left
+						.box
+							.tt 工作內容
+							ul
+								li 自動化設備機構設計、測試、導入
+								li 自動化應用產品機構設計、測試
+								li 智慧型機器人設計、測試
+
+					.right
+						.box
+							.tt 需求年資與背景
+							ul
+								li 碩士畢業，2年以上經驗
+								li 電機電子工程、機械工程、自動控制、其他工程相關系所畢業
+						.box
+							.tt 具備技能
+							ul
+								li 具3D CAD、 Inventer工具設計經驗者尤佳
+								li 具自動化設備機構設計開發經驗者尤佳
+				a.btn.js-monitor-params(href="#")
+					span 立即應徵
+					span.icon 
+						img(src="asset/svg/arrow.svg", alt="")
+				.mt
+					img(src="img/mt.png", alt="")
+				.solar_box
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+		.p4(style="display:none")
+			.main
+				.ppl
+					.pic_pos
+						.inner
+							.pic
+								.inner
+									.num
+										img(src="asset/svg/04.svg", alt="")
+									.name
+										.inner
+											ul
+												li
+													img(src="asset/svg/icon-target.svg", alt="")
+												li 張嘉裕
+												li 軟體設計資深工程師
+												li 年資4年
+									img.pc_dis(src="img/PPL4.png", alt="")
+									img.m_dis(src="img/PPL4_m.png", alt="")
+							.bg
+								img(src="img/deco4.png", alt="")
+				//txt
+				.content
+					h4 選擇台達的原因
+					p 一開始是因為台達發展穩定及營收成長，所以選擇進入台達。再者因為自己研究與視覺演算法相關，而當時視覺演算法研究與開發類型的工作缺額並不多，因此能夠得到這份工作覺得相當開心。
+					h4 在台達的成長
+					p 接觸更多之後會學習到軟體規劃與架構設計的重要，也有很多機會學習到不同的軟體套件與工具應用，這些可提升專業技能。<br>個人也有國內外出差的機會，以工作層面來說，能直接了解客戶需求，也有機會窺探競爭對手的機器與技術，以個人層面來說，等於是有機會獨立旅行到不同地方去走走增廣見聞。
+					h4 建議應徵此職務必備技能
+					ul
+						li 程式語言-具備撰寫程式語言的邏輯思維，若能熟練使用C/C++會是一大優勢。
+						li 研究能力-根據一個主題進行文獻探討、實現方法、改進方法及創新的過程。
+						li 團隊合作-適時與其他團隊成員相互討論、互相幫助，讓團隊達成共同目標。
+						li 追求新知的渴望與實事求是的態度。
+					h4 給新鮮人的一句話
+					h5 
+						span.txt 程式語言只是工具，
+							span.break 卻能撰寫出優美的詩詞來證明自己價值。
+							span.d1
+								img(src="asset/svg/d1.svg", alt="")
+							span.d2 
+								img(src="asset/svg/d2.svg", alt="")
+				.dot_bg
+				.ppl_bg
+					img(src="img/PPL4-2.png", alt="")
+			.job
+				h2 軟體工程師(機器視覺)<br>智慧感測器事業處IABG(桃園三廠)
+				.container
+					.left
+						.box
+							.tt 工作內容
+							ul
+								li 機器視覺，影像處理，演算法開發
+								li 熟悉Machine Learning / Deep Learning
+					.right
+						.box
+							.tt 需求年資與背景
+							ul
+								li 碩士畢業，2年以上經驗
+								li 電機電子、自動控制、資訊工程相關系所畢業
+						.box
+							.tt 具備技能
+							p 熟悉使用C、C++、Matlab、Python
+				a.btn.js-monitor-params(href="#")
+					span 立即應徵
+					span.icon 
+						img(src="asset/svg/arrow.svg", alt="")
+				.mt
+					img(src="img/mt.png", alt="")
+				.solar_box
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+		.p5
+			.main
+				.ppl
+					.pic_pos
+						.inner
+							.pic
+								.inner
+									.num
+										img(src="asset/svg/05.svg", alt="")
+									.name
+										.inner
+											ul
+												li
+													img(src="asset/svg/icon-target.svg", alt="")
+												li 許傑巽
+												li 軟體設計資深工程師
+												li 年資4年
+									img.pc_dis(src="img/PPL5.png", alt="")
+									img.m_dis(src="img/PPL5_m.png", alt="")
+							.bg
+								img(src="img/deco4.png", alt="")
+				//txt
+				.content
+					h4 選擇台達的原因
+					p 當初因為想從事機器人相關的領域，發現台達電有機器人部門且擁有許多資源，包括有自行研發馬達和研發機器視覺的能力，因此如果說台灣有誰有最豐富的資訊來做機械手臂的話，我覺得一定是台達。
+					h4 在台達的成長
+					ul
+						li 因為機械手臂在使用上需進行許多模組的整合，因此有機會進行跨部門整合。
+						li 能第一線接觸到終端使用者，聽取使用者需求及意見。
+						li 常有機會參與國際性的展覽，除了可跟國外同事交流外，也能增加自己的國際視野。
+					h4 建議應徵此職務必備技能
+					p 電機、機械、資工相關科系畢業，熟悉線性代數，有一定的空間概念，有一定的編程能力。
+					h4 給新鮮人的一句話
+					h5 
+						span.txt 加入台達，飛黃騰達
+							span.d1
+								img(src="asset/svg/d1.svg", alt="")
+							span.d2 
+								img(src="asset/svg/d2.svg", alt="")
+				.dot_bg
+				.ppl_bg
+					img(src="img/PPL5-2.png", alt="")
+			.job
+				h2 軟體設計工程師_台中分公司(中科)
+				.container
+					.left
+						.box
+							.tt 工作內容
+							ul
+								li 機器人操作軟體開發，建立友善的操作介面
+								li 整合/應用第三方軟件，加速軟體開發時程
+								li 撰寫軟體功能說明文件
+								li 撰寫研發文件
+
+					.right
+						.box
+							.tt 需求年資與背景
+							ul
+								li 碩士畢業，2年以上經驗
+								li 電機電子工程、自動控制、資訊工程相關系所畢業
+
+						.box
+							.tt 具備技能
+							ul
+								li 熟悉使用C、C#、C++
+								li 熟悉Open CASCADE或OpenCV尤佳
+				a.btn.js-monitor-params(href="#")
+					span 立即應徵
+					span.icon 
+						img(src="asset/svg/arrow.svg", alt="")
+				.mt
+					img(src="img/mt.png", alt="")
+				.solar_box
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+					.solar
+						img(src="asset/svg/solar.svg", alt="")
+	//learning
+	a.apply_btn.js-monitor-params(href="#")
+		span.icon
+			img(src="asset/svg/icon-apply.svg", alt="")
+		span 立即應徵
+	section.learning
+		.tt
+			h3 
+				span.icon 
+					img(src="asset/svg/icon-book.svg", alt="")
+				span 學習發展
+			h2 循序漸進訓練發展
+		.chart
+			img.pc_dis(src="asset/svg/chart.svg", alt="")
+			img.m_dis(src="asset/svg/chart_m.svg", alt="")
+		.culture
+			ul
+				li 實務訓練
+				li 策略發展
+				li 願景領導
+			.sub 文化塑型
+		.dot_bg
+	section.welfare
+		.tt
+			h3 
+				span.icon 
+					img(src="asset/svg/icon-like.svg", alt="")
+				span 優質福利
+			h2 多元完善優質福利
+		.main
+			.box
+				.tt 多元完善優質福利
+				ul
+					li 年薪上看
+						span 20個月
+					li 旅遊補助
+						span $10,000元
+					li 生日禮券及蛋糕
+					li 黃金旅遊假(有薪)
+					li 員工健檢方案
+					li 員工團體保險(公費含子女及配偶)
+					li 員工餐廳月付500元
+						span 享三餐
+			.box
+				.tt 員工個人發展接軌國際
+				ul
+					li 
+						span 全額補助
+						| 外部技術研討及技能訓練
+					li 全球64個研發中心進階學習
+					li e-Learning學習平台
+					li 管理與技術職
+						span 雙軌晉升
+					li 
+						span 放眼全球
+						| 的工作歷練及發展
+					li 參與國際知名專家主持專案
+		.picBox
+			.pic
+				img(src="img/p1.jpg", alt="")
+			.pic
+				img(src="img/p2.jpg", alt="")
+			.pic
+				img(src="img/p3.jpg", alt="")
+		.deco1
+			img(src="img/deco2.png", alt="")
+		.deco2
+			img(src="img/deco1.png", alt="")
+block other
+	// 廣告追蹤機制 
+	<script type="text/javascript" src="// static.104.com.tw/104main/js/common/monitorParm.js "></script>

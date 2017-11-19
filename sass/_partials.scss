@@ -1,0 +1,159 @@
+section {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+h3,
+h4,
+h5 {
+    @extend %fw_b;
+}
+
+h3 {
+    font-size: 2.6rem;
+    color: $blue;
+    @media screen and (max-width: 374px) {
+        font-size: 2rem;
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .icon {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+    }
+}
+
+h2 {
+    font-size: 4rem;
+    color: $d-blue;
+    @extend %fw_bl;
+    transform: skew(-8deg);
+    margin-bottom: 15px;
+    @media screen and (max-width: 767px) {
+        font-size: 3.6rem;
+    }
+    @media screen and (max-width: 374px) {
+        font-size: 2.8rem;
+    }
+}
+
+p {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.tt {
+    margin-top: 80px;
+    @media screen and (max-width: 767px) {
+        margin-top: 50px;
+    }
+}
+
+.break {
+    display: block;
+}
+
+.spec {
+    color: $blue;
+    @extend %fw_b;
+    transform: skew(-8deg);
+    font-size: 1.8rem;
+}
+
+.large {
+    font-size: 2rem;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+h4 {
+    font-size: 2.2rem;
+    color: $blue;
+    @media screen and (max-width: 960px) {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+h5 {
+    color: $d-blue;
+    font-size: 2.5rem;
+    
+    @media screen and (max-width: 960px) {
+        margin: auto;
+        width: 80%;
+    }
+}
+
+.box {
+    width: 100%;
+    background: #f4fbfd;
+    border-radius: 10px;
+    border: 1px solid #6aa9bb;
+    overflow: hidden;
+    .tt {
+        background: $l-blue;
+        width: 100%;
+        padding: 10px;
+        margin-top: 0;
+        color: white;
+        font-size: 1.8rem;
+        @extend %fw_m;
+    }
+}
+
+.apply_btn {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    color: white;
+    font-size: 3.5rem;
+    background: $orange;
+    text-align: center;
+    padding: 20px;
+    z-index: 5;
+    transition: all .3s ease;
+    display: none;
+    @media screen and (max-width: 767px) {
+        font-size: 2rem;
+        padding: 10px 20px;
+        top: 70%;
+    }
+    @media screen and (max-width: 374px) {
+        font-size: 1.8rem;
+        padding: 12px 8px;
+    }
+    span {
+        display: inline-block;
+        @extend %fw_bl;
+        &:last-child {
+            transform: skew(-8deg);
+        }
+    }
+    .icon {
+        width: 90px;
+        margin: auto;
+        display: block;
+        @media screen and (max-width: 767px) {
+            width:50px;
+        }
+        @media screen and (max-width: 374px) {
+            width: 40px;
+        }
+    }
+    &:hover {
+        background: #ffd51d;
+    }
+}
+.break_5{
+    @media screen and (max-width: 374px) {
+            // display: block;
+        }
+}

@@ -1,0 +1,94 @@
+@import "compass/css3";
+// nav styles
+.mobile-nav-wrap {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+// styling of dropdown menu
+.mobile-header-nav {
+    background-color: $blue;
+    display: none; // hide until menu is clicked
+    list-style: none; // replace with %styled-list
+    margin: 0; // replace with %styled-list
+    padding: 0; // replace with %styled-list
+    position: absolute;
+    top: 70px; // if nav sliding in below header
+    width: 100%;
+    li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        a {
+            color: white;
+            display: block;
+            padding: 15px 0;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            font-size: 1.6rem;
+            &:hover {
+                background-color: lighten(#222222, 5%);
+            }
+        }
+        img {
+            width: 20px;
+            margin-right: 8px;
+        }
+        &:nth-child(2) {
+            img {
+                width: 16px;
+                margin-top: 3px;
+            }
+        }
+        span {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .icon {
+            color: white;
+        }
+    }
+}
+
+
+// styling of hamburger menu
+.hamburger-menu {
+    transition: all 0.3s ease-in-out;
+    float: right;
+    @include clear;
+    margin-top: 21px;
+    margin-right: 25px;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+
+    .menu-item {
+        background: $blue;
+        display: block;
+        height: 3px;
+        margin: 0 0 10px;
+        transition: all 0.3s ease-in-out;
+        width: 40px;
+    }
+    &.open {
+        margin-top: 26px;
+        .menu-item {
+            margin: 0 0 5px;
+
+            &:first-child {
+                transform: rotate(45deg);
+                transform-origin: 10px;
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+                transform-origin: 8px;
+            }
+        }
+    }
+}
