@@ -443,8 +443,6 @@ h2 {
   font-size: 40px;
   font-size: 4rem;
   color: #0061a3;
-  -webkit-transform: skew(-8deg);
-  transform: skew(-8deg);
   margin-bottom: 15px; }
   @media screen and (max-width: 767px) {
     h2 {
@@ -452,6 +450,9 @@ h2 {
   @media screen and (max-width: 374px) {
     h2 {
       font-size: 2.8rem; } }
+  h2 .inner {
+    -webkit-transform: skew(-8deg);
+    transform: skew(-8deg); }
 
 p {
   font-size: 16px;
