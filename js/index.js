@@ -3,12 +3,14 @@
         loadHash: true,
         init: function(){
             var $this = this;
-            $('.worker .main, .worker .job h2, .worker .job .container, .worker .job .btn, .worker .job .mt, .worker .job .solar_box').addClass('wow fadeInUp').attr('data-wow-offset', '50');
+            $('.worker .main, .worker .job h2, .worker .job .container, .worker .job .btn, .worker .job .mt, .worker .job .solar_box').addClass('wow fadeInUp');//.attr('data-wow-offset', '50');
+            
             // 初始化WOW
             $('.wow').css('visibility', 'hidden');
 
             this.menuSet();
             this.hashSet();
+            this.scrollSet();
 
             $(window).on('load', function(){
                 new WOW().init();
@@ -42,6 +44,11 @@
                 }
                 $('html, body').stop().animate({ scrollTop: $('.' + final).position().top + 50 }, 500);
                 $('.js-toggle-menu').click();
+            });
+            // 立即應徵
+            $('.apply_btn').click(function(e){
+                e.preventDefault();
+                $('.pc_nav li:eq(0)').click();
             });
         },
         hashSet: function(){
