@@ -1,8 +1,22 @@
+.workerBox {
+    position: relative;
+    width: 100%;
+}
+.workerInfo {
+    margin-top: 65px;
+}
 .tab {
     width: 670px;
-    margin: 30px auto 0;
+    @media screen and (min-width: 961px) {
+        position: absolute;
+        top: -44px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
     @media screen and (max-width: 960px) {
         width: 100%;
+        margin: 30px auto 0;
     }
     ul {
         width: 100%;
@@ -195,6 +209,7 @@ h5 {
     }
     .pic_pos {
         width: 100%;
+        pointer-events:none;
         @media screen and (min-width: 960px) {
             width: 86%;
             left: -43%;
@@ -357,6 +372,9 @@ h5 {
     width: 1000px;
     pointer-events: none;
     z-index: -3;
+    img{
+        pointer-events: none;
+    }
 }
 
 .deco {

@@ -26,6 +26,11 @@
                 $('.mobile-header-nav').slideToggle();
                 $(this).toggleClass('open');
             });
+            // logo
+            $('header .logo').click(function(e){
+                e.preventDefault();
+                $('html, body').stop().animate({ scrollTop: 0 }, 500);
+            });
             // menu設置
             $('.pc_nav li, .mobile-nav-wrap li').click(function(e){
                 e.preventDefault();
@@ -42,8 +47,9 @@
                         final = 'welfare';
                         break;
                 }
-                $('html, body').stop().animate({ scrollTop: $('.' + final).position().top + 50 }, 500);
-                $('.js-toggle-menu').click();
+                $('html, body').stop().animate({ scrollTop: $('.' + final).position().top }, 500);
+                console.log($('.js-toggle-menu').hasClass('open'))
+                if($('.js-toggle-menu').hasClass('open')) $('.js-toggle-menu').click();
             });
             // 立即應徵
             $('.apply_btn').click(function(e){
@@ -69,7 +75,14 @@
         },
         scrollSet: function(){
             var disTop = $(window).scrollTop();
+            var menuTop = $('header').position().top;
             var learnTop = $('.learning').position().top - $('.learning').height();
+            
+            if(disTop > menuTop){
+                $('header').css('position', 'fixed');
+            }else{
+                $('header').css('position', 'absolute');
+            }
             
             if(disTop > learnTop){
                 $('.apply_btn').addClass('show');
