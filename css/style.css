@@ -350,7 +350,8 @@ header {
         margin-top: 3px; }
     header .pc_nav img {
       width: 20px;
-      margin-right: 8px; }
+      margin-right: 8px;
+      height: 21px; }
     header .pc_nav a {
       color: #0187db;
       font-weight: bold; }
@@ -919,7 +920,7 @@ h5 {
   @media screen and (max-width: 960px) {
     .worker .main {
       padding-top: 0; } }
-  @media screen\0 {
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .worker .main {
       overflow: hidden; } }
 .worker .content {
