@@ -919,6 +919,9 @@ h5 {
   @media screen and (max-width: 960px) {
     .worker .main {
       padding-top: 0; } }
+  @media screen\0 {
+    .worker .main {
+      overflow: hidden; } }
 .worker .content {
   width: 60%;
   margin-left: 39%;

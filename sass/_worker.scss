@@ -94,6 +94,12 @@
         @media screen and (max-width: 960px) {
             padding-top: 0;
         }
+       @media screen\0 {
+        overflow: hidden;
+       }
+        // @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)  {
+        //     overflow: hidden;
+        // }
     }
     .content {
         width: 60%;
@@ -112,6 +118,7 @@
             margin: auto;
             padding-right: 0;
         }
+        
         li {
             font-size: 1.6rem;
             list-style-type: decimal;
