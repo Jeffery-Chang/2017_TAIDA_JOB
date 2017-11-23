@@ -122,7 +122,8 @@ body {
 
 img {
   width: 100%;
-  display: block; }
+  display: block;
+  pointer-events: none; }
 
 a {
   text-decoration: none;
