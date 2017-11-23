@@ -14,7 +14,7 @@
     margin: 0; // replace with %styled-list
     padding: 0; // replace with %styled-list
     position: absolute;
-    top: 70px; // if nav sliding in below header
+    top: 69px; // if nav sliding in below header
     width: 100%;
     li {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -33,6 +33,7 @@
         img {
             width: 20px;
             margin-right: 8px;
+            height: 21px;
         }
         &:nth-child(2) {
             img {
