@@ -48,7 +48,6 @@
                         break;
                 }
                 $('html, body').stop().animate({ scrollTop: $('.' + final).position().top }, 500);
-                console.log($('.js-toggle-menu').hasClass('open'))
                 if($('.js-toggle-menu').hasClass('open')) $('.js-toggle-menu').click();
             });
             // 立即應徵
