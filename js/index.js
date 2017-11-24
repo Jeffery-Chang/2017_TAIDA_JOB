@@ -75,7 +75,7 @@
         scrollSet: function(){
             var disTop = $(window).scrollTop();
             var menuTop = $('header').position().top;
-            var learnTop = $('.intro').position().top - ($('.intro').height() / 2);
+            var learnTop = $('.learning').position().top - $('.learning').height();
             
             if(disTop > menuTop){
                 $('header').css('position', 'fixed');
