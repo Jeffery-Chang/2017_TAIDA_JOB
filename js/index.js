@@ -4,16 +4,16 @@
         init: function(){
             var $this = this;
             $('.worker .main, .worker .job h2, .worker .job .container, .worker .job .btn, .worker .job .mt, .worker .job .solar_box').addClass('wow fadeInUp');//.attr('data-wow-offset', '50');
-            
+
             // 初始化WOW
             $('.wow').css('visibility', 'hidden');
 
             this.menuSet();
             this.hashSet();
             this.scrollSet();
-
+            new WOW().init();
+            
             $(window).on('load', function(){
-                new WOW().init();
                 $this.loadHash = false;
             }).on('scroll', function(){
                 $this.scrollSet();
@@ -76,13 +76,13 @@
             var disTop = $(window).scrollTop();
             var menuTop = $('header').position().top;
             var learnTop = $('.learning').position().top - $('.learning').height();
-            
+
             if(disTop > menuTop){
                 $('header').css('position', 'fixed');
             }else{
                 $('header').css('position', 'absolute');
             }
-            
+
             if(disTop > learnTop){
                 $('.apply_btn').addClass('show');
             }else{
